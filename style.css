@@ -1,0 +1,96 @@
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 800px;
+    background: #111d4a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    min-height: 40vh;
+    width: 100%;
+    background-color: #333;
+    background-image: url(images/dice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-title,
+.card-read-time,
+.card-btn {
+    font-family: 'Blinker', sans-serif;
+}
+
+.card-title {
+    color: #05cbe9;
+    font-size: 1.75rem;
+    margin-top: 0;
+}
+
+.card-body {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3em;
+}
+
+.card-read-time {
+    margin-bottom: 0;
+    font-size: 1.25em;
+    opacity: .6;
+    line-height: 1;
+}
+
+.card-read-time span {
+    font-weight: 700;
+    display: block;
+}
+
+.card-btn {
+    font-size: 1.25rem;
+    background: #05cbe9;
+    color: #111d4a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: .5em 1em; 
+    letter-spacing: 1px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .card-img {
+        width: 40%;
+    }
+
+    .card-content {
+        width: 60%;
+    }
+}
